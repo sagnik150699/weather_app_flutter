@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:logger/logger.dart';
 
 const kTempTextStyle = TextStyle(
   fontFamily: 'Spartan MB',
   fontSize: 100.0,
 );
+
+Logger logger = Logger();
 
 const kMessageTextStyle = TextStyle(
   fontFamily: 'Spartan MB',

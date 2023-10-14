@@ -1,8 +1,11 @@
-import 'package:clima/services/location.dart';
-import 'package:clima/services/networking.dart';
 
-const apiKey = 'e72ca729af228beabd5d20e3b7749713';
+import 'location.dart';
+import 'networking.dart';
+
+const apiKey = 'e3c4d4b56200fec1c34bd3e30768509c';
 const openWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather';
+// https://api.openweathermap.org/data/2.5/weather?q=London&appid=e3c4d4b56200fec1c34bd3e30768509c&units=metric
+
 
 class WeatherModel {
   Future<dynamic> getCityWeather(String cityName) async {

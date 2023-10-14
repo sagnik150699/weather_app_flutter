@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:clima/utilities/constants.dart';
+
+import '../utilities/constants.dart';
 
 class CityScreen extends StatefulWidget {
   @override
@@ -7,7 +8,7 @@ class CityScreen extends StatefulWidget {
 }
 
 class _CityScreenState extends State<CityScreen> {
-  String cityName;
+  late String cityName;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class _CityScreenState extends State<CityScreen> {
             children: <Widget>[
               Align(
                 alignment: Alignment.topLeft,
-                child: FlatButton(
+                child: TextButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
@@ -47,7 +48,7 @@ class _CityScreenState extends State<CityScreen> {
                   },
                 ),
               ),
-              FlatButton(
+              TextButton(
                 onPressed: () {
                   Navigator.pop(context, cityName);
                 },
