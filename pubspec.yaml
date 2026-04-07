@@ -10,11 +10,11 @@ dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons:
-  geolocator:
-  http:
-  flutter_spinkit:
-  logger:
+  cupertino_icons: ^1.0.8
+  geolocator: ^9.0.2
+  http: ^1.6.0
+  flutter_spinkit: ^5.2.1
+  logger: ^2.0.2+1
 
 dev_dependencies:
   flutter_test:
